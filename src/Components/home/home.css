@@ -1,10 +1,11 @@
-.home__container {
+.home__container{
     row-gap: 7rem;
 }
 
 .home__content {
     grid-template-columns: 116px repeat(2, 1fr);
     padding-top: 5.5rem;
+    padding-left: 10rem;
     column-gap: 2rem;
     align-items: center;
 }
@@ -131,6 +132,7 @@
     .home__content {
         grid-template-columns: 100px repeat(2, 1fr);
         column-gap: 1.25rem;
+        padding-left: 3.5rem;
     }
 
     .home__hand {
@@ -150,7 +152,8 @@
 
     .home__description {
         min-width: initial;
-        margin-bottom: var(--mb-2-25);
+        margin-bottom: var(--mb-1);
+
     }
 
     .home__img {

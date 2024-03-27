@@ -17,7 +17,7 @@ const About = () => {
 
           <p className="about__description">
             Frontend developer, I create web pages with better user
-            interface. 
+            interface.
             Proficient in designing and developing responsive websites
             using HTML, CSS, and JavaScript.
             Intermediate in building full-stack
@@ -30,7 +30,7 @@ const About = () => {
           <a download="" href={Resume} className="button button--flex">
             Download Resume
             <svg
-              class="button__icon"
+              className="button__icon"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"

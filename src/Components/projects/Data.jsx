@@ -27,4 +27,12 @@ export const Data = [
     description:
       "A to-do list is just a list of things you have to-do. That means basically anything and everything can be on your to-do list—but just because you've written your to-dos down doesn't mean your to-do list is actually useful.",
   },
+  {
+    id: 4,
+    image: Image1,
+    title: "Job Board ",
+    subtitle:"MERN",
+    description:
+      "Discover a dynamic job board platform connecting talented professionals with top-tier employers. Whether you're job hunting or seeking candidates, enjoy a seamless process with personalized job alerts, advanced search tools, and career growth resources.",
+  },
 ];

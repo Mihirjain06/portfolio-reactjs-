@@ -1,6 +1,8 @@
 import Image1 from "../../assets/MERN.png";
 import Image2 from "../../assets/React_logo.png";
 import Image3 from "../../assets/React_logo.png";
+import Image4 from "../../assets/html-css.jpg";
+
 
 export const Data = [
   {
@@ -34,5 +36,13 @@ export const Data = [
     subtitle:"MERN",
     description:
       "Discover a dynamic job board platform connecting talented professionals with top-tier employers. Whether you're job hunting or seeking candidates, enjoy a seamless process with personalized job alerts, advanced search tools, and career growth resources.",
+  },
+  {
+    id: 5,
+    image: Image4,
+    title: "Car Landing Page ",
+    subtitle:"Html-Css",
+    description:
+      "Discover a  project featuring smooth animations with GSAP and an interactive Swiper slider, creating a visually captivating and highly interactive user experience.",
   },
 ];

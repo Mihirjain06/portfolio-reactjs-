@@ -16,18 +16,16 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-            Frontend developer, I create web pages with better user
-            interface.
-            Proficient in designing and developing responsive websites
-            using HTML, CSS, and JavaScript.
-            Intermediate in building full-stack
-            web applications using the MERN (MongoDB, Express.js, React.js,
-            Node.js) stack.
-            Experienced in creating visually appealing user
-            interfaces and intuitive user experiences.
+            Full Stack Developer with hands-on experience in .Net MVC, SQL Server,
+            React.js, and the MERN stack. Worked as a Full Stack Developer at Uka
+            Tarsadia University, contributing to large-scale ERP systems — eGov
+            University Management System, Online Exam Platform, Entry Management
+            System (EMS), and a Certificate Generation tool. Also delivered a
+            freelance project: Digital Wealth, a complete Unlisted IPO platform
+            with user website and admin panel built in .Net MVC.
           </p>
 
-          <a download="" href={Resume} className="button button--flex">
+          <a download="Mihir_Jain_Resume.pdf" href={Resume} className="button button--flex">
             Download Resume
             <svg
               className="button__icon"

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./qualification.css";
 
 const Qualification = () => {
-  const [toggleState, setToggleState] = useState(0);
+  const [toggleState, setToggleState] = useState(1);
 
   const toggleTab = (index) => {
     setToggleState(index);
@@ -40,6 +40,8 @@ const Qualification = () => {
         </div>
 
         <div className="qualification__sections">
+
+          {/* ====== EDUCATION TAB ====== */}
           <div
             className={
               toggleState === 1
@@ -47,14 +49,15 @@ const Qualification = () => {
                 : "qualification__content"
             }
           >
+            {/* B.Tech CSE */}
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Full Stack Development</h3>
+                <h3 className="qualification__title">B.Tech — Computer Science & Engineering</h3>
                 <span className="qualification__subtitle">
-                  Uka Tarsadia Univercity, Bardoli, Surat
+                  Uka Tarsadia University, Bardoli, Surat
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2024 - Present
+                  <i className="uil uil-calendar-alt"></i> 2021 – 2025
                 </div>
               </div>
 
@@ -64,6 +67,7 @@ const Qualification = () => {
               </div>
             </div>
 
+            {/* 12th */}
             <div className="qualification__data">
               <div></div>
 
@@ -73,25 +77,25 @@ const Qualification = () => {
               </div>
 
               <div>
-                <h3 className="qualification__title">Web Development</h3>
-                <span className="qualiification__subtitle">
-                  Uka Tarsadia Univercity, Bardoli, Surat
+                <h3 className="qualification__title">Higher Secondary (12th) — Science</h3>
+                <span className="qualification__subtitle">
+                  Rajasthan State Board
                 </span>
-
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2023 - Present
+                  <i className="uil uil-calendar-alt"></i> 2020 – 2021
                 </div>
               </div>
             </div>
 
+            {/* 10th */}
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Web Design</h3>
+                <h3 className="qualification__title">Secondary (10th)</h3>
                 <span className="qualification__subtitle">
-                  Uka Tarsadia Univercity, Bardoli, Surat
+                  Rajasthan State Board
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2021 - 2023
+                  <i className="uil uil-calendar-alt"></i> 2019 – 2020
                 </div>
               </div>
 
@@ -100,41 +104,25 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
             </div>
-
-            {/* <div className="qualification__data">
-              <div></div>
-
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-
-              <div>
-                <h3 className="qualification__title">Web Development</h3>
-                <span className="qualiification__subtitle">
-                  Uka Tarsadia Univercity, Bardoli, Surat
-                </span>
-
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2023 - Present
-                </div>
-              </div>
-            </div> */}
           </div>
 
-          <div className={
+          {/* ====== EXPERIENCE TAB ====== */}
+          <div
+            className={
               toggleState === 2
                 ? "qualification__content qualification__content-active"
                 : "qualification__content"
-            }>
+            }
+          >
+            {/* Job - UTU Full Stack Developer */}
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Full Stack Development</h3>
+                <h3 className="qualification__title">Full Stack Developer & Website Developer</h3>
                 <span className="qualification__subtitle">
-                  TeachReal - Valsad(Guj)
+                  Uka Tarsadia University — Bardoli, Surat
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2023 - Present
+                  <i className="uil uil-calendar-alt"></i> Sep 2025 – Aug 2026
                 </div>
               </div>
 
@@ -144,6 +132,7 @@ const Qualification = () => {
               </div>
             </div>
 
+            {/* Training - UTU */}
             <div className="qualification__data">
               <div></div>
 
@@ -153,25 +142,25 @@ const Qualification = () => {
               </div>
 
               <div>
-                <h3 className="qualification__title">Web Development</h3>
-                <span className="qualiification__subtitle">
-                  Uka Tarsadia Univercity, Bardoli, Surat
+                <h3 className="qualification__title">.Net MVC Developer — Training</h3>
+                <span className="qualification__subtitle">
+                  Uka Tarsadia University — Bardoli, Surat
                 </span>
-
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2023 - Present
+                  <i className="uil uil-calendar-alt"></i> Jun 2025 – Aug 2025
                 </div>
               </div>
             </div>
 
+            {/* Freelance - Digital Wealth */}
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Web Design</h3>
+                <h3 className="qualification__title">Freelance .Net MVC Developer</h3>
                 <span className="qualification__subtitle">
-                  Uka Tarsadia Univercity, Bardoli, Surat
+                  Digital Wealth — Unlisted IPO Platform
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2021 - 2023
+                  <i className="uil uil-calendar-alt"></i> Freelancing Project
                 </div>
               </div>
 
@@ -180,6 +169,27 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
             </div>
+
+            {/* Internship - TeachReal */}
+            <div className="qualification__data">
+              <div></div>
+
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+
+              <div>
+                <h3 className="qualification__title">Full Stack Development Intern</h3>
+                <span className="qualification__subtitle">
+                  TeachReal — Valsad, Gujarat
+                </span>
+                <div className="qualification__calendar">
+                  <i className="uil uil-calendar-alt"></i> Aug 2023 – Nov 2023
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

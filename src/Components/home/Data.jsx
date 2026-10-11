@@ -55,10 +55,9 @@ const Data = () => {
           ></path>
         </svg>
       </h1>
-      <h3 className="home__subtitle">Web Desiging & Developer</h3>
+      <h3 className="home__subtitle">Full Stack Developer</h3>
       <p className="home__description">
-        "Passionate Web Designer & Developer with a Flair for Creating Intuitive
-        User Experiences"
+        .Net MVC · React.js · MERN Stack · SQL Server
       </p>
       <a href="#contact" className="button button--flex">
         Say! Hey

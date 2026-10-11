@@ -1,45 +1,47 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import "./projects.css"
 import {Data}  from "./Data";
 //Import Swiper React Components
-import { Swiper, SwiperSlide, } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 //Import Swiper styles
 import "swiper/css";
-import"swiper/css/pagination";
+import "swiper/css/pagination";
 
 //Import required modules
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
 const Projects = () => {
+  const swiperRef = useRef(null);
+
   return (
     <section className="project container section" id="projects">
         <h2 className="section__title">My Projects</h2>
         <span className="section__subtitle">Projects who up my skills</span>
 
-        <Swiper className="project__container"
+        <Swiper
+          className="project__container"
           loop={true}
           grabCursor={true}
           spaceBetween={24}
-          pagination={{
-            clickable: true,
+          pagination={{ clickable: true }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
           }}
           breakpoints={{
-            576: {
-              slidesPerView: 2,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 48,
-            },
+            576: { slidesPerView: 2 },
+            768: { slidesPerView: 2, spaceBetween: 48 },
           }}
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
+          onSwiper={(swiper) => { swiperRef.current = swiper; }}
+          onMouseEnter={() => { if (swiperRef.current) swiperRef.current.autoplay.stop(); }}
+          onMouseLeave={() => { if (swiperRef.current) swiperRef.current.autoplay.start(); }}
         >
             {Data.map(({id, image, title, subtitle, description }) => {
                 return (
                     <SwiperSlide className="project__card" key={id}>
-                        <img src={image} alt=""  className="project__img"/>
-
+                        <img src={image} alt="" className="project__img"/>
                         <h3 className="project__name">{title}</h3>
                         <h5 className="project__technology">{subtitle}</h5>
                         <p className="project__description">{description}</p>
